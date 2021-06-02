@@ -31,8 +31,7 @@ noABB* insereABB(noABB* raiz, void *info, int (*compara) (void*, void*))
     noABB *ant = NULL;
 
     //checa se a arvore é vazia
-    if(raiz == NULL)
-        raiz = novo;
+    if(raiz == NULL)raiz = novo;
 
     else//senao
     {
@@ -117,12 +116,12 @@ void buscaABB(noABB* raiz, void *info, int (*compara) (void*, void*), void (*imp
             }
         }
 
-      if(aux == NULL)
-      {
-        printf("Elemento nao encontrado\n");
-        free(aux2);
-        return 0;
-      }
+        if(aux == NULL)
+        {
+            printf("Elemento nao encontrado\n");
+            free(aux2);
+            return 0;
+        }
     }
 }
 

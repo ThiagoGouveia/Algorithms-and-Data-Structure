@@ -58,7 +58,7 @@ noAVL* insereAVL(noAVL* raiz, void *info, int (*compara) (void*, void*))
 
 	//atualiza a altura do nó atual da recursão
 	raiz->altura = 1 + getMaiorInteiro(getAltura(raiz->esq), getAltura(raiz->dir));
-		//retorna o nó passando pela função de balanceamento, que será responsável por verificar se o nó precisa ou não de ser balanceado
+	//retorna o nó passando pela função de balanceamento, que será responsável por verificar se o nó precisa ou não de ser balanceado
    	return balanceamentoAVL(raiz);
 }
 
