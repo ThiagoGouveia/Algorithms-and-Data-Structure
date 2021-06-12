@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
 
 
 
-    	imprimeVetor(vet, tamanho);
+    imprimeVetor(vet, tamanho);
 
 	InsertionSort(vet, tamanho);
 
